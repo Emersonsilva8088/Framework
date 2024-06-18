@@ -3,7 +3,9 @@
     {
         "nome": "emerson",
         "email": "email",
+        "pasword": "senhaforte",
         "id": 101
+    
     }
 
 
