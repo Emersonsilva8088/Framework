@@ -8,7 +8,8 @@ import { User } from '../models/user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-userModel = new User( "","")
+
+userModel = new User("", "")
 receberDados(){
 console.log(this.userModel)
 
