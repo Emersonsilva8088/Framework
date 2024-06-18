@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from '../models/user';
 
 
 @Component({
@@ -8,7 +9,10 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 userModel = new User( "","")
+receberDados(){
+console.log(this.userModel)
 
+}
 
 
 }
