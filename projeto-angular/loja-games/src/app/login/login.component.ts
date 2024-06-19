@@ -9,7 +9,7 @@ import { User } from '../models/user';
 })
 export class LoginComponent {
 
-userModel = new User("", "")
+userModel= new user ("", "")
 receberDados(){
 console.log(this.userModel)
 
