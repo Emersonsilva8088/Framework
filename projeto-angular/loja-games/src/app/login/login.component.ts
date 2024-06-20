@@ -8,11 +8,16 @@ import { User } from '../models/user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  usuario! : string;
+  senha! : string;
 
-userModel= new user ("", "")
-receberDados(){
-console.log(this.userModel)
+  constructor(private _loginService: loginService,private _router: Router) {}
 
+  fazerLogin(){
+
+this._loginService.login(this.usuario,this.senha);
+this._router.navigate(['restrito/lista']);
+this._loginService.setMostramenu(false);
 }
 
 
